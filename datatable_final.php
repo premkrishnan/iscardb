@@ -9,12 +9,12 @@
 	<link rel="icon" href="images/icon.gif" />
 	<!--// CSS //-->
 	<link href="css/jquery.dataTables.min.css" rel="stylesheet">	
-	<link href="assets/bootstrap-3.3.7/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
 	<!--// JS //-->
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="jquery/jquery-3.3.1.js"></script>
+	<script src="jquery/jquery.min.js"></script>
 	<script src="jquery/jquery.dataTables.min.js"></script>
 	<script>
 	$(document).ready(function() {
@@ -475,6 +475,6 @@
         </div>
     </footer>
 	
-    <script src="assets/js/main.js"></script>	
+    <script src="jquery/main.js"></script>	
 </BODY>
 </HTML>
