@@ -1,0 +1,256 @@
+/*------------------------------------------------------------------
+
+    Main Style Stylesheet
+    Project:        Vortex. |  StartUp Landing Page Template
+    Version:        1.0
+    Author:         Gnawi Themes
+    Last change:    8/29/2016
+    Primary use:    Landing,Startup and Showcase.
+
+-------------------------------------------------------------------*/
+/*-- Imports (only visible on scss file) --*/
+@import "https://fonts.googleapis.com/css?family=Raleway:300,400,700";
+/*========================================
+          Base Style
+========================================*/
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  background: #fefefe;
+  font-size: 14px;
+  line-height: 24px; }
+
+.section-padding {
+  padding: 100px 0; }
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+/*-- Preloader --*/
+.page-preloader {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #e1e1e1;
+  z-index: 100000; }
+
+.spinner {
+  position: relative;
+  top: 35%;
+  margin: 100px auto;
+  width: 250px;
+  height: 40px;
+  text-align: center;
+  font-size: 12px; }
+
+.spinner > div {
+  background-color: #ff5600;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out; }
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s; }
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s; }
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s; }
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s; }
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+    40%,
+    100% {
+    -webkit-transform: scaleY(0.4); }
+  20% {
+    -webkit-transform: scaleY(1); } }
+@keyframes sk-stretchdelay {
+  0%,
+    40%,
+    100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4); }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1); } }
+/*========================================
+            Typography
+========================================*/
+/*-- Typo Style --*/
+h1 {
+  font-size: 35px;
+  font-weight: 200;
+  /*letter-spacing: 0.08em; */
+  margin-bottom: 35px;
+  color: #555; }
+
+h2 {
+  font-size: 36px;
+  letter-spacing: 0.08em; }
+
+h3 {
+  font-size: 32px;
+  text-decoration: underline;
+  letter-spacing: 0.02em; }
+
+h4 {
+  font-size: 24px;
+  letter-spacing: 0.08em; }
+
+h5 {
+  font-size: 40px;
+  color: #555; 
+  /*letter-spacing: 0.08em; */}
+
+h6 {
+  font-size: 16px; }
+
+p {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  color: #333;  }
+
+/*========================================
+            Buttons Style
+========================================*/
+.btn-blue {
+  /*background: #44c5ee;*/
+  background: linear-gradient(to top left, #d144ee 0%, #ff7a00  100%);
+  padding: 10px 28px;
+  border: 1px solid #ee4493;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  -webkit-transition: 0.5s all;
+          transition: 0.5s all;
+  /*box-shadow: 0px 0px 60px 0px rgba(68, 197, 238, 0.6);*/
+  outline: none !important; }
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+  background: linear-gradient(to top left, #44d9ee 0%, #d144ee  100%);
+  border: 1px solid #44a8ee;
+  color: #fff; }
+
+#home {
+  position: relative;
+  padding: 50px 0px 30px 0px;
+  /*background: url(../img/banner.jpg);*/
+  /*background-color: #44c5ee;*/
+  background: linear-gradient(to top left, #fff 0%, #fff 100%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #home .caption {
+    padding: 60px 0; }
+    #home .caption h2 {
+      color: #0799; }
+    #home .caption p {
+      font-size: 18px;
+      margin-top: 25px;
+      color: #fff; }
+    #home .caption .btn {
+      margin-top: 25px; }
+    #home .caption .btn-blue {
+      margin-left: 15px; }
+      #home .caption .btn-blue i {
+        position: relative;
+        top: 5px;
+        margin-right: 10px; }
+  #home .signup-form {
+    background-color: #c4d9ff;
+    padding: 45px;
+	border:1px solid #8ebbff;
+    border-radius: 5px; }
+    #home .signup-form input {
+      border: 1px solid #eee;
+      height: 38px;
+      box-shadow: none !important; }
+    #home .signup-form input:focus {
+      border-color: #44c5ee; }
+    #home .signup-form .form-control {
+      font-size: 14px;
+      /*padding: 10px 15px;*/
+      color: #555;
+      background-color: #fff;
+      border-radius: 3px; }
+
+/*========================================
+           How to?
+========================================*/
+#howto {
+  background-color: #f5f3fd;
+}
+  #howto .icon-box {
+    margin-top: 20px; }
+    #howto .icon-box i {
+      font-size: 46px;
+      color: #f23c7e; }
+    #howto .icon-box h4 {
+      margin: 25px 0; }
+/*========================================
+           Footer
+========================================*/
+footer {
+  background: #c4d9ff;
+  font-size: 12px;
+  color: #555;
+  padding: 0px; }
+
