@@ -1,0 +1,15 @@
+body{font-family:'Raleway', sans-serif, arial; font-size:12px; color:#333; margin:0px; padding:0px;width:100%;}
+
+
+#header{height:102px;background-color: #4f87bf;} /* background:url(../images/toprepeat.jpg) repeat;*/
+
+#authorcontent{width:50%; border:0px solid #333; min-height:200px;margin:0px auto 0px auto;}
+#authorcontent h3{font-family:sans-serif; font-size:18px; color:#546591; line-height:15px; font-weight:normal; text-align:justify;}
+
+#authors{font-family:sans-serif; font-size:12px; font-weight:normal;line-height:20px;color:#555;}
+#authors a{font-family:sans-serif; font-size:12px; color:#555; font-weight:normal; text-decoration:none}
+#authors a:hover{color:#ff3e00;}
+
+#SearchHead{font-family:sans-serif; font-size:13px; font-weight:normal; color:#333; line-height:17px; text-align:center; border:1px solid #7d7d7d; background:#f7f7f7; padding:5px;}
+#SearchHead a{font-family:sans-serif; font-size:12px; color:#0669fd; font-weight:normal; text-decoration:underline}
+#SearchHead a:hover{color:#ff3e00;}
